@@ -17,4 +17,10 @@ In short, this will set you up for success to use SQLite as a local development 
 ## Environment Variables Explained
 Using the Python library `dotenv`, we load our environment variables with `config.py`. We import `config.py` at the top of `settings.py` so our environment variables are populated before anything starts. For development, we can use our local SQLite database, and for production we will use PostgreSQL.
 
-To distinguish between the production and development environment, we can setup "config vars" when deploying to Heroku. Normally you would add the database url, secret key, and an extra key value pair {"ENV": "heroku"}, that way our app can tell if it's in a production environment or not.
+Create a `.env` file within `project_name/project_name/` and add the following environment variables:
+```
+SECRET_KEY=exampleKey
+ADMIN_PATH=exampleAdmin
+```
+
+To distinguish between the production and development environment, we can setup "config vars" when deploying to Heroku. Normally you would add the PostgreSQL database url, admin path, secret key, and an extra key value pair {"ENV": "heroku"}, that way our app can tell if it's in a production environment or not.
