@@ -6,4 +6,4 @@ from django.http import HttpResponse
 # Note: for apps, you would use a subdirectory structure
 def index(request):
     """ Welcome Page """
-    return HttpResponse("<h1>Hello, world!</h1>")
+    return render(request, "index.html")
