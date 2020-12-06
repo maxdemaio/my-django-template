@@ -1,4 +1,5 @@
 # My Django Template Setup
+![Photo of the website](/static/myImages/repoPreview.png)
 
 ## Overview
 The following commands will create a new Django project using this template and initialize a new Git repository for you (remove command depends on OS):
