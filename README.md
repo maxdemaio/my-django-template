@@ -4,7 +4,7 @@
 ## Overview
 The following commands will create a new Django project using this template and initialize a new Git repository for you (remove command depends on OS):
 ```
-django-admin startproject [example_project_name] --template=project_name --name=Procfile
+django-admin startproject [example_project_name] --template=https://github.com/maxwelldemaio/my-django-template/archive/master.zip --name=Procfile
 cd [example_project_name]
 rmdir /s .git
 git init
