@@ -9,7 +9,7 @@ cd [example_project_name]
 rmdir /s .git
 git init
 ```
-In short, this will set you up for success to use SQLite as a local development database and PostgreSQL in a production environment. This is geared towards [Heroku](https://www.heroku.com/), however a similar approach could be used for another cloud deployment platform. Also, we will use `venv` the built-in Python library to create a virtual environment for all requirements. Finally, before deploying don't forget to add your own host name to Django's allowed hosts in `settings.py`.
+In short, this will set you up for success to use SQLite as a local development database and PostgreSQL in a production environment. This is geared towards [Heroku](https://www.heroku.com/), however a similar approach could be used for another cloud deployment platform. We will use `venv` the built-in Python library to create a virtual environment for all requirements. Note: before deploying don't forget to add your own host name to Django's allowed hosts in `settings.py`.
 
 - [Documentation on deploying to Heroku](https://devcenter.heroku.com/articles/deploying-python)
 - [Example video on deploying to Heroku](https://www.youtube.com/watch?v=kBwhtEIXGII)
@@ -23,4 +23,4 @@ SECRET_KEY=exampleKey
 ADMIN_PATH=exampleAdmin
 ```
 
-To distinguish between the production and development environment, we can setup "config vars" when deploying to Heroku. Normally you would add the PostgreSQL database url, admin path, secret key, and an extra key value pair {"ENV": "heroku"}, that way our app can tell if it's in a production environment or not.
+To distinguish between the production and development environment we can setup "config vars" when deploying to Heroku. Normally you would add the PostgreSQL database url, admin path, secret key, and an extra key value pair {"ENV": "heroku"}, that way our app can tell if it's in a production environment or not.
